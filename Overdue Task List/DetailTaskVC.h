@@ -26,7 +26,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *dateLabel;
 @property (strong, nonatomic) IBOutlet UILabel *detailLabel;
+@property (strong, nonatomic) IBOutlet UIButton *isCompletButton;
 
+- (IBAction)isCompletButtonPressed:(UIButton *)sender;
 - (IBAction)editBarButtonPressed:(UIBarButtonItem *)sender;
 
 @end

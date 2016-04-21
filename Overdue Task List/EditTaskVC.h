@@ -24,8 +24,10 @@
 @property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (strong, nonatomic) IBOutlet UITextField *textField;
 @property (strong, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) IBOutlet UIButton *isCompletButton;
 
 - (IBAction)saveBarButtonPressed:(UIBarButtonItem *)sender;
+- (IBAction)isCompletButtonPressed:(UIButton *)sender;
 
 
 @end

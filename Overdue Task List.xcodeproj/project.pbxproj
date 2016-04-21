@@ -61,9 +61,9 @@
 		5AAA2F4C1CC7862A00C5C344 /* DetailTaskVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTaskVC.m; sourceTree = "<group>"; };
 		5AAA2F4E1CC7864300C5C344 /* EditTaskVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTaskVC.h; sourceTree = "<group>"; };
 		5AAA2F4F1CC7864300C5C344 /* EditTaskVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTaskVC.m; sourceTree = "<group>"; };
-		5AAA2F511CC794BD00C5C344 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
 		5AAA2F531CC7988B00C5C344 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
 		5AAA2F541CC7988B00C5C344 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		5AD21A7E1CC91DA5000A475E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 		5AAA2F141CC783CD00C5C344 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5AAA2F511CC794BD00C5C344 /* PrefixHeader.pch */,
+				5AD21A7E1CC91DA5000A475E /* PrefixHeader.pch */,
 				5AAA2F171CC783CD00C5C344 /* AppDelegate.h */,
 				5AAA2F181CC783CD00C5C344 /* AppDelegate.m */,
 				5AAA2F201CC783CD00C5C344 /* Assets.xcassets */,

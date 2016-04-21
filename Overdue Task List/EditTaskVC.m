@@ -23,6 +23,7 @@
     self.textField.text = self.task.title;
     self.textView.text = self.task.detail;
     self.datePicker.date = self.task.date;
+    [self.isCompletButton setTitle:[NSString stringWithFormat:@"%@", self.task.completion ? @"YES" : @"NO"] forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -71,5 +72,10 @@
 - (IBAction)saveBarButtonPressed:(UIBarButtonItem *)sender {
     [self updateTask];
     [self.delegate saveEditTask];
+}
+
+- (IBAction)isCompletButtonPressed:(UIButton *)sender {
+    [self.isCompletButton setTitle:[NSString stringWithFormat:@"%@", !self.task.completion ? @"YES" : @"NO"] forState:UIControlStateNormal];
+    self.task.completion = !self.task.completion;
 }
 @end

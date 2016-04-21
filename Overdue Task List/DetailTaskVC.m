@@ -54,6 +54,7 @@
     self.nameLabel.text = task.title;
     self.dateLabel.text = formatedDate;
     self.detailLabel.text = task.detail;
+    [self.isCompletButton setTitle:[NSString stringWithFormat:@"%@", task.completion ? @"YES" : @"NO"] forState:UIControlStateNormal];
 }
 
 #pragma mark - EditTaskVC Delegate
@@ -66,6 +67,12 @@
 }
 
 #pragma mark - IBAction
+
+- (IBAction)isCompletButtonPressed:(UIButton *)sender {
+    [self.isCompletButton setTitle:[NSString stringWithFormat:@"%@", !self.task.completion ? @"YES" : @"NO"] forState:UIControlStateNormal];
+    self.task.completion = !self.task.completion;
+    [self.delegate saveEditTaskFromDetailTaskVC];
+}
 
 - (IBAction)editBarButtonPressed:(UIBarButtonItem *)sender
 {
