@@ -20,6 +20,7 @@
 
 @property (weak, nonatomic) id <EditTaskVCDelegate> delegate;
 @property (strong, nonatomic) Task *task;
+@property (nonatomic) BOOL isCompleted;
 
 @property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
 @property (strong, nonatomic) IBOutlet UITextField *textField;

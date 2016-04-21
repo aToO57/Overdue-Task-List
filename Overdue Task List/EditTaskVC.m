@@ -20,10 +20,12 @@
     self.textField.delegate = self;
     self.textView.delegate = self;
     
+    
     self.textField.text = self.task.title;
     self.textView.text = self.task.detail;
     self.datePicker.date = self.task.date;
-    [self.isCompletButton setTitle:[NSString stringWithFormat:@"%@", self.task.completion ? @"YES" : @"NO"] forState:UIControlStateNormal];
+    self.isCompleted = self.task.completion;
+    [self.isCompletButton setTitle:[NSString stringWithFormat:@"%@", self.isCompleted  ? @"YES" : @"NO"] forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,6 +67,7 @@
     self.task.title = self.textField.text;
     self.task.detail = self.textView.text;
     self.task.date = self.datePicker.date;
+    self.task.completion = self.isCompleted;
 }
 
 #pragma mark - IBAction
@@ -75,7 +78,8 @@
 }
 
 - (IBAction)isCompletButtonPressed:(UIButton *)sender {
-    [self.isCompletButton setTitle:[NSString stringWithFormat:@"%@", !self.task.completion ? @"YES" : @"NO"] forState:UIControlStateNormal];
-    self.task.completion = !self.task.completion;
+    
+    [self.isCompletButton setTitle:[NSString stringWithFormat:@"%@", !self.isCompleted ? @"YES" : @"NO"] forState:UIControlStateNormal];
+    self.isCompleted = !self.isCompleted;
 }
 @end

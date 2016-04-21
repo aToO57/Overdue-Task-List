@@ -63,7 +63,7 @@
 {
     [self displayData:self.task];
     [self.navigationController popViewControllerAnimated:YES];
-    [self.delegate saveEditTaskFromDetailTaskVC];    
+    [self.delegate saveEditTaskFromDetailTaskVC];
 }
 
 #pragma mark - IBAction
